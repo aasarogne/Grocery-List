@@ -1,0 +1,97 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+body{
+    font-family: 'Courier New', Courier, monospace; /* hvilke font som er valgt*/
+    background-color: #ECF9D2; /* farge på font*/
+}
+
+li {
+    list-style: none;
+} 
+
+/* boksen med text..*/ 
+.user_input { 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 24px;
+}
+
+
+.add_button { 
+    height: 48px;
+    width: 48px;
+}
+
+.deleteButton {
+    height: 48px;
+    width: 48px;
+}
+
+/* varen blir sjekket av med strek + boks*/
+[type="checkbox"]:checked + span { 
+    text-decoration: line-through;
+} 
+
+.container{
+
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+ul li button {
+    margin: 1rem;
+}
+
+.groceries{
+    width: 600px; /* størrelsen på boksen rundt*/ 
+    min-height: 100vh; /* vh = følger størrelsen til handlelista, jo lenger liste, jo lenger boks */ 
+    border: 2px solid black;  /* 2px = tykkelsen på ytterste linjen*/
+    margin: auto;
+    background-color:  #e1c699;
+}
+
+.groceries h1{
+    font-size: 2.5rem;
+    margin-top: 1em; /* em = big or small font size, the sizes will be in proportion*/
+}
+
+.groceries i{
+    font-size: 2rem;
+    color: greenyellow;
+}
+
+
+.groceries input{
+    font-family: 'Courier New', Courier, monospace;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid pink; /* linjen på boksen*/
+    width: 70%; /* lengde på boksen under tittel*/
+    font-size: 1.5rem;
+}
+
+@media(max-width:480px){
+    .groceries h1{
+        font-size: 2rem;
+    }
+
+
+    .groceries i{
+        font-size: 1.5rem;
+    } 
+
+    .groceries input{
+        font-size: 1rem;
+    } 
+    
+    #allItems h2{
+        margin-left: 25px;
+        font-size: 1.5rem;
+    }
+
+}
